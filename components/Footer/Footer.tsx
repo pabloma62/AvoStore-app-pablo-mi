@@ -36,26 +36,21 @@ const Footer = () => (
             </List>
           </Grid.Column>
           <Grid.Column width={7}>
-            <Header as="h4">Hecho para</Header>
+            <Header as="h4">App realizada por</Header>
             <p>
-              <a href="https://platzi.com/">Platzi y su curso de Next.JS</a> de
-              Platzi dictado por{' '}
-              <a href="https://twitter.com/jonalvarezz">@jonalvarezz</a>
+              <a href="https://www.linkedin.com/in/pablo-m-i/">Pablo Mañas Izquierdo</a> con
+              React.js, Next.js y escrita en TypeScript
             </p>
             <List horizontal style={{ display: 'flex' }}>
               <List.Item
-                icon="twitter"
+                icon="react"
                 style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/jonalvarezz">Twitter</a>}
+                content={'Frontend'}
               />
               <List.Item
-                icon="github"
+                icon="node"
                 style={{ display: 'flex' }}
-                content={
-                  <a href="https://github.com/jonalvarezz/platzi-nextjs">
-                    GitHub
-                  </a>
-                }
+                content={'Backend'}
               />
             </List>
           </Grid.Column>
@@ -63,7 +58,7 @@ const Footer = () => (
       </Grid>
       <div className="colophon">
         <p className="colophon-entry">
-          Icons made by{' '}
+          Iconos tomados de{' '}
           <a
             target="_blank"
             href="https://www.flaticon.com/authors/freepik"
@@ -71,13 +66,13 @@ const Footer = () => (
           >
             Freepik
           </a>
-          {' from '}
+          {' desde '}
           <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">
             www.flaticon.com
           </a>
         </p>
         <p className="colophon-entry">
-          Avocado images taken from{' '}
+          Imágenes de aguacates tomadas de{' '}
           <a
             className="acnor"
             target="_blank"
@@ -86,7 +81,7 @@ const Footer = () => (
           >
             Avocado 101
           </a>
-          {' at '}
+          {' en '}
           <a
             target="_blank"
             href="https://www.californiaavocado.com"

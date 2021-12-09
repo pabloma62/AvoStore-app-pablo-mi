@@ -26,24 +26,26 @@ const KawaiiHeader = () => {
   }, [count])
 
   return (
-    <div className="container">
-      {meMori ? (
-        <PuesMuero />
-      ) : (
-        <PuesVivo
-          visible={visible}
-          onClick={toggleVisible}
-          onComplete={() => setCount((prevCount) => prevCount + 1)}
-        />
-      )}
+    <div className='container'>
+      {meMori
+        ? (
+          <PuesMuero />
+          )
+        : (
+          <PuesVivo
+            visible={visible}
+            onClick={toggleVisible}
+            onComplete={() => setCount((prevCount) => prevCount + 1)}
+          />
+          )}
 
       <Confirm
         open={modalOpen}
         content={{ children: ModalHeaderContent }}
         onCancel={closeModal}
         onConfirm={closeModal}
-        cancelButton="Ay, lo siento"
-        confirmButton="OK"
+        cancelButton='Ay, lo siento'
+        confirmButton='OK'
         closeOnDimmerClick={false}
       />
 

@@ -13,7 +13,7 @@ const CartSummary = ({ totalAmount }: CartSummaryProps) => {
         {` ${totalAmount}`}
       </span>
       <Button color="black" floated="right">
-        Check out
+        Revisar
       </Button>
     </Segment>
   )

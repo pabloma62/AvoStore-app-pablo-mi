@@ -20,13 +20,13 @@ const Navbar = () => {
             title="Inicio | Todos los productos"
           >
             <Avocado />
-            Avo Store
+            Tienda
           </Menu.Item>
         </Link>
         <Menu.Menu position="right">
           <Link href="/cart" passHref>
             <Menu.Item active={pathname === '/cart'}>
-              <ShoppingCartIcon cartCount={cartCount} name="Canasta" />
+              <ShoppingCartIcon cartCount={cartCount} name="Cesto" />
             </Menu.Item>
           </Link>
         </Menu.Menu>

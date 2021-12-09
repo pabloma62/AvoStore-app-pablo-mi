@@ -23,7 +23,7 @@ const HomePage = ({ productList }: { productList: TProduct[] }) => {
       <KawaiiHeader />
       <section>
         <Link href="/yes-or-no">
-          <a>¿Deberia comer un avo hoy?</a>
+          <a>¿Debería comer un aguacate hoy?</a>
         </Link>
       </section>
       <ProductList products={productList} />

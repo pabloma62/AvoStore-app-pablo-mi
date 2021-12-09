@@ -4,46 +4,46 @@ import Layout from '@components/Layout/Layout'
 
 const avoFacts = [
   {
-    title: 'Most avocados come from Mexico',
+    title: 'La mayoría de los aguacates proceden de México',
     content:
-      'While avocados are grown in California and Florida, the majority sold in grocery stores come from south central Mexico. The main reason for the abundance of “south of the border” avocados is that Mexico is blessed with a year-round growing climate. The avocado is believed to have originated in the state of Puebla, Mexico, as far back as 10,000 B.C.',
+      'Aunque los aguacates se cultivan en California y Florida, la mayoría de los que se venden en los supermercados proceden del centro-sur de México. La razón principal de la abundancia de aguacates "al sur de la frontera" es que México está bendecido con un clima de cultivo durante todo el año. Se cree que el aguacate se originó en el estado de Puebla (México) en el año 10.000 antes de Cristo.'
   },
   {
-    title: 'The conquistadors were huge fans.',
+    title: 'Los conquistadores eran grandes aficionados.',
     content:
-      'Spanish explorers arriving in Mexico during the 16th century survived on avocados and were the first Europeans to consume them. As a result of the Spanish Conquest, avocados spread to South America and Central America. ',
+      'Los exploradores españoles que llegaron a México en el siglo XVI sobrevivieron con aguacates y fueron los primeros europeos en consumirlos. A raíz de la conquista española, el aguacate se extendió a Sudamérica y Centroamérica.'
   },
   {
-    title: '“Avocado” wasn’t its original name.',
+    title: '"Aguacate" no era su nombre original.',
     content:
-      'Irishman Sir Hans Sloane called it an avocado in 1696 in a Jamaican-plants catalog. He also dubbed the avocado tree the “alligator pear tree.”',
+      'El irlandés Sir Hans Sloane lo llamó aguacate en 1696 en un catálogo de plantas jamaicanas. También apodó al árbol del aguacate como el "árbol de la pera caimán".”'
   },
   {
-    title: 'It’s actually a fruit.',
+    title: 'En realidad es una fruta.',
     content:
-      'Did you know that an avocado is a fruit? While definitely not sweet, it falls firmly in the fruit-not the vegetable-family. That’s because the avocado tree is part of the flowering-plant family Lauraceae.',
+      '¿Sabías que el aguacate es una fruta? Aunque no es dulce, pertenece a la familia de las frutas, no a la de las verduras. Esto se debe a que el aguacate forma parte de la familia de las plantas con flor, las lauráceas.'
   },
   {
-    title: 'There’s a secret trick to ripening them up quick',
+    title: 'Hay un truco secreto para madurarlas rápidamente',
     content:
-      'Need to ripen that avocado ASAP? Place it in a brown paper bag with a banana or two. The bananas will release ethylene gas, a natural plant hormone that aids in ripening fruit. On the other hand, check out this guide to learn how to store them for later.',
-  },
+      '¿Necesitas madurar ese aguacate cuanto antes? Colócalo en una bolsa de papel marrón con un plátano o dos. Los plátanos liberarán gas etileno, una hormona vegetal natural que ayuda a madurar la fruta. Por otro lado, echa un vistazo a esta guía para aprender a almacenarlos para más adelante.'
+  }
 ]
 
 const AboutPage = () => {
   return (
     <Layout>
       <section>
-        <Header as="h1" textAlign="center">
-          13 Surprising Facts About Avocados
+        <Header as='h1' textAlign='center'>
+          13 datos sorprendentes sobre los aguacates
         </Header>
         <figure>
-          <Image src="/images/avocados.jpg" alt="Avocados on a table" />
+          <Image src='/images/avocados.jpg' alt='Avocados on a table' />
           <figcaption>
-            Originally from{' '}
+            Originalmente de{' '}
             <a
-              target="_blank"
-              href="https://www.tasteofhome.com/article/13-surprising-facts-about-avocados/"
+              target='_blank'
+              href='https://www.tasteofhome.com/article/13-surprising-facts-about-avocados/' rel='noreferrer'
             >
               Taste of Home
             </a>
@@ -52,7 +52,7 @@ const AboutPage = () => {
         <ol>
           {avoFacts.map(({ title, content }) => (
             <li key={title}>
-              <h3 className="ui header">{title}</h3>
+              <h3 className='ui header'>{title}</h3>
               <p>{content}</p>
             </li>
           ))}
@@ -73,7 +73,7 @@ const AboutPage = () => {
         figcaption {
           margin-top: 0.5rem;
           font-site: 0.7rem;
-          color: grey;
+          color: #808080;
         }
 
         ol {
@@ -111,7 +111,8 @@ const AboutPage = () => {
           padding-left: 40px;
           margin-bottom: 2rem;
         }
-      `}</style>
+      `}
+      </style>
     </Layout>
   )
 }

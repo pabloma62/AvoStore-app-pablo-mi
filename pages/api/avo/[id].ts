@@ -4,7 +4,7 @@ import enablePublicAccess from '@cors'
 
 const AvoDetail = async (req: NextApiRequest, res: NextApiResponse) => {
   try {
-    // Generally, you would not want this in your apps.
+    // Generally, you would not want this in  apps.
     // See more in 'cors.js'
     await enablePublicAccess(req, res)
 

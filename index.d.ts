@@ -12,7 +12,7 @@ type TProductId = string
 type TProductAttributes = {
   description: string
   shape: string
-  hardiness: string
+  resistencia: string
   taste: string
 }
 
